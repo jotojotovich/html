@@ -1,0 +1,171 @@
+body{
+  background: #e4cece00;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* *** */
+
+.wrapper{
+  height: 100%;
+  max-width: 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.wrapper:hover{
+  /* outline: 1px solid red; */
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  /* outline: 1px solid; */
+}
+
+
+.logo{
+  background: #feb386;
+  width: 30%;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+}
+
+.logo div{
+  margin: 0 auto;
+  font-weight: 900;
+  /* width: 100%; */
+}
+
+.main-menu_{
+  width: 70%;
+}
+
+.main-menu_:hover{
+  outline: dodgerblue 1px solid;
+}
+
+.main-menu_ ul{
+
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  
+}
+
+.main-menu_ ul li a:hover{
+
+  color: red;
+  
+}
+
+@media (max-width: 550px){
+  .main-menu_ ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+  }
+  .main-menu_ ul li{
+    margin: 1% 0;
+  }
+  .content{
+    font-size: 10px;
+  }
+}
+
+a{
+  text-decoration: none;
+}
+
+.content{
+  width: 69.111111%;
+  position: relative;
+  left: 30.888888888%;
+  top: 85px;
+  cursor: pointer;
+}
+
+.content-h1{
+  font-weight: 500;
+  color: #333;
+  font-weight: 600;
+}
+
+.content-img{
+  width: 100%;
+  padding-top: 10px;
+}
+
+.content-img img{
+  width: 100%;
+}
+
+.sidebar{
+  max-width: 29%;
+  top: -105px;
+  position: relative;
+}
+
+/* .main-menu_ li{ display: inline-block;} */
+
+/*  */
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+.menu-main {
+  list-style: none;
+  margin: 40px 0 5px;
+  padding: 25px 0 5px;
+  text-align: center;
+  background: white;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #606060;
+  /* display: inline-block; */
+  vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: #9d999d;}
+.menu-main a.current, .menu-main a:hover{color: #feb386;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #feb386;
+  transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+ }
+}
