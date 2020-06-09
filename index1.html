@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/vue.js"></script>
+    <link rel="stylesheet" href="css/style1.css">
+    <style>
+      .demo{
+        color: red; font-size: 2em; font-family: sans-serif;
+      }
+    </style>
+</head>
+<body>
+  <div class="wrapper"> <!-- wrapper -->
+    <div id="app"> <!--app-->
+      <header>
+        <div class="logo">
+          <div>LOGO</div>
+        </div>
+        <div class="main-menu_">
+          <ul>
+            <li v-for="item in menu"><a class="menu-link" href="#">{{ item }}</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="content" @mouseover="onlyArticle" @mouseout="allContent" title="Режим чтения">
+        <h1 class="content-h1">Самые простые техники адаптивной верстки</h1>
+        Сайтов с адаптивной разметкой с каждым месяцем становится все больше, заказчики кроме кроссбраузерности
+         все чаще требуют адаптивность, но многие разработчики не спешат обучаться новым техникам.
+          Но адаптивный дизайн — это просто! В этой статье представлено 5 примеров адаптивной разметки различных
+           элементов веб-страниц.
+        Сайтов с адаптивной разметкой с каждым месяцем становится все больше, заказчики кроме кроссбраузерности
+         все чаще требуют адаптивность, но многие разработчики не спешат обучаться новым техникам.
+          Но адаптивный дизайн — это просто! В этой статье представлено 5 примеров адаптивной разметки различных
+           элементов веб-страниц.
+        Сайтов с адаптивной разметкой с каждым месяцем становится все больше, заказчики кроме кроссбраузерности
+         все чаще требуют адаптивность, но многие разработчики не спешат обучаться новым техникам.
+          Но адаптивный дизайн — это просто! В этой статье представлено 5 примеров адаптивной разметки различных
+           элементов веб-страниц.
+        <div class="content-img">
+          <img src="img/01.png" alt="">
+        </div>
+      </div>
+      <div class="sidebar">
+        <h1>{{ data }}</h1>
+        <h2>{{ data }}</h2>
+        <h3>{{ data }}</h3>
+        <h4>{{ data }}</h4>
+        <h5>{{ data }}</h5>
+        <h6>{{ data }}</h6>
+      </div>
+      <p v-bind:title="title">{{ data }}</p>
+      <p :title="title">{{ data }}</p>
+      <p>Я виден</p>
+    </div> <!--/app-->
+  </div> <!-- /wrapper -->
+
+  <ul class="menu-main">
+    <li><a href="" class="current">Work</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Blog</a></li>
+    <li><a href="">Contact</a></li>
+  </ul>
+
+  <!-- Vue.js -->
+  <script>
+    var app = new Vue ({
+      el: '#app',
+      data: {
+        data: 'Hello, Vue.js!',
+        title: 'title',
+        active: true,
+        inactive: true,
+        menu: ['Главная', 'Проекты', 'Блог', 'Контакты']
+      },
+      methods: {
+        onlyArticle(){
+          document.querySelector('.logo').style.color = 'aliceblue';
+          var menuLink = document.querySelectorAll('.menu-link');
+          for (var i = 0; i < menuLink.length; i++)
+          {
+            menuLink[i].style.color = 'aliceblue';
+          }
+          var sidebar = document.querySelector('.sidebar');
+          sidebar.style.color = 'aliceblue';
+        },
+        allContent(){
+          document.querySelector('.logo').style.color = '#222';
+          var menuLink = document.querySelectorAll('.menu-link');
+          for (var i = 0; i < menuLink.length; i++)
+          {
+            menuLink[i].style.color = '#222';
+          }
+          var sidebar = document.querySelector('.sidebar');
+          sidebar.style.color = '#222';
+        }
+      }
+    })
+  </script>
+  <script>
+    var content = document.querySelector('.content');
+    /*
+    content.onmouseover = function () {
+      document.querySelector('.logo').style.color = 'aliceblue';
+      var menuLink = document.querySelectorAll('.menu-link');
+      for (var i = 0; i < menuLink.length; i++)
+      {
+        menuLink[i].style.color = 'aliceblue';
+      }
+      var sidebar = document.querySelector('.sidebar');
+      sidebar.style.color = 'aliceblue';
+    }
+    */
+    /*
+    content.onmouseout = function () {
+      document.querySelector('.logo').style.color = 'gray';
+      var menuLink = document.querySelectorAll('.menu-link');
+      for (var i = 0; i < menuLink.length; i++)
+      {
+        menuLink[i].style.color = 'gray';
+      }
+      var sidebar = document.querySelector('.sidebar');
+      sidebar.style.color = 'gray';
+    }
+    */
+  </script>
+</body>
+</html>
