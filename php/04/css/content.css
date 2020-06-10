@@ -1,0 +1,137 @@
+.wrapper .leftCol{
+	width: 70%;
+    margin-right: 10%;
+    margin-top: 10px; /* добавил я, чтобы блок визуально! был на одной высоте с правым */
+    /*background-color: red;*/ /* нужны для проверки макета */
+    /*height: 400px;*/ /* нужны для проверки макета */
+    float: left;
+}
+
+.wrapper .leftCol .bigArticle{
+	width: 78%;
+	margin-left: 10%;
+	background-color: #f6f6f6;
+	padding: 1%;
+	float: left;
+}
+
+.wrapper .leftCol .article{
+	width: 40%;
+	margin-left: 5%;
+	background-color: #f6f6f6;
+	padding: 1%;
+	float: left;
+}
+
+.wrapper .leftCol .bigArticle img, .wrapper .leftCol .article img{
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.wrapper .leftCol .bigArticle h2, .wrapper .leftCol .article h2{
+	font-weight: normal;
+	font-size: 1.4em;
+	color: #636363;
+	font-family: Comic Sans MS, sans-serif;
+}
+
+.wrapper .leftCol .bigArticle p, .wrapper .leftCol .article p{
+	width: 90%;
+	margin-left: 5%;
+	font-size: 0.9em;
+}
+
+.wrapper .leftCol .bigArticle .more{
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #878787;
+	color: #fff;
+	width: 15%;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.wrapper .leftCol .bigArticle .more:hover{
+	background-color: #a2a2a2;
+}
+
+.wrapper .leftCol .article .more-next{
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #878787;
+	color: #fff;
+	width: 30%;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.wrapper .leftCol .article .more-next:hover{
+	background-color: #a2a2a2;
+}
+
+/* <span>выделение части текста</span> */
+.bigArticle ul li p span{
+	font-weight: 600;
+}
+
+.bigArticle ul li{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.flex{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.input{
+	margin-top: 15px;
+	width: 90%;
+	border-radius: 5px;
+	padding: 10px;
+	color: #636363;
+}
+
+.input:hover{
+   border: 1px solid silver;
+}
+
+#done{
+    background-color: #65e39e;
+    outline: none;
+    cursor: pointer;
+    width: 94%;
+}
+
+
+#done:hover{
+	background-color: #202423;
+	color: #fff;
+	outline: none;
+}
+
+#done:active{
+    outline: none;
+}
+
+#message{
+	resize: none;
+	height: 200px;
+}
+
+.leftCol h2{
+	text-align: center;
+    margin-bottom: 10px;
+    font-family: Comic Sans MS;
+    font-size: 1.5em;
+    color: #3e4846;
+    /*text-shadow: 7px -2px 5px #000000a8;*/ /* эксперимент */
+}
+
+#err{
+	margin-top: 10px;
+	color: #6b0f0f;
+	font-size: 1.2em;
+	cursor: pointer;
+}

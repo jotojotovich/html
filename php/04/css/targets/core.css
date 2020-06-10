@@ -1,0 +1,33 @@
+/* сброс браузерных стилей */
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 1em;
+	font: inherit;
+	line-height: 150%;
+	font-family: Tahoma;
+}
+
+/*body{
+	display: flex;
+	flex-direction: column;
+}*/
+
+
+
+/* правила для всех элементов */
+
+a{
+	text-decoration: none;
+	color: #333;
+}
+
+ul{
+	list-style: none;
+}
+
+.clear{
+	clear: both;
+}
+

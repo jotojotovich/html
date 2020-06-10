@@ -1,0 +1,16 @@
+.wrapper{
+	/*background-color: red;*/
+	height: 300px;
+	padding: 2%;
+}
+
+.wrapper .aboutTarget{
+	background-color: #faf6ea;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.5em;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5%;
+    box-shadow: 9px 7px 14px 0px #03A9F4;
+}
