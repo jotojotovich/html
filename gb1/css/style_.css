@@ -1,0 +1,116 @@
+body{
+	background: #f8f8f8;
+}
+
+.wrapper{
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+header div{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+	opacity: 1.0;
+}
+#logo:hover{
+    width: 13%;
+    opacity: 0.5;
+}
+.main-menu{
+	list-style: none;
+}
+.main-menu li a{
+	/*color: #faa91c;*/
+	/*color: #ba1118;*/
+	font-family: Tahoma, Helvetica, verdana;
+	background: gray;
+    color: white;
+    padding: 7px;
+}
+.main-menu li{
+	display: inline-table;
+}
+h1{
+	/*color: #008c8d;*/
+	/*color: #018d8e;*/
+	color: #f68827;
+	font-family: Courier, Times New Roman;
+	font-size: 50px;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border: 0px solid powderblue;
+    outline: 2px solid gray;
+    opacity: 0.5;
+    transition: width 1s, height 1s, background-color 1s, transform 1s;
+}
+img:hover{
+    border: 0px solid powderblue;
+    outline: 1px solid red;
+    width: 45%;
+    opacity: 1;
+    transition: width 1s, height 1s, background-color 1s, transform 1s;
+    position: relative;
+}
+h2{
+	/*color: #5a9d36;*/
+	color: #22449e;
+}
+
+.product{
+	font-size: 18px;
+	color: #000;
+	font-weight: 400;
+	background: #eaeaea;
+}
+
+/*img[alt="fender"]{
+	outline: 3px solid red;
+	border: 0px;
+}*/
+
+.content div{
+	text-align: center;
+}
+
+fieldset{
+	height: 200px;
+	width: 150px
+}
+input{
+	margin: 5px;
+	height: 20px;
+}
+.catalog p a{
+	color: #22449e;
+	font-family: Tahoma, Helvetica, verdana;
+}
+.description{
+	color: #707070;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 16px;
+/*Для краткого описания товара:
+Цвет текста #707070.
+Размер шрифта 14px.
+Начертание шрифта italic. (font-style).
+Высоту текста 16px (line-height).*/
+}
+.description h3, .description p{
+	text-align: left;
+}
+.detail{
+	color: #484343;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+	/*list-style-image: url(../images/g30.png);*/
+	list-style-image: url(https://img.icons8.com/material/24/000000/circled-g.png);
+}
